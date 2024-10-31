@@ -377,6 +377,7 @@ public:
       | _BV(REL_U), | _BV(REL_V), | _BV(REL_W)
     )) : 0;
   }
+  
   #if HAS_EXTRUDERS
     static void set_e_relative() {
       CBI(axis_relative, E_MODE_ABS);
@@ -511,6 +512,11 @@ private:
 
   #if ENABLED(NOZZLE_CLEAN_FEATURE)
     static void G12();
+  #endif
+  
+  #if ENABLED(SOLENOID_DEATHTRAP)
+    static void G13(); //initializes or some shit ||| see line 382 of gcode.cpp
+    static void G14();
   #endif
 
   #if ENABLED(CNC_WORKSPACE_PLANES)
