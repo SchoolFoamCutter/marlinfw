@@ -2353,7 +2353,7 @@
 
 #endif
 
-//#define SOLENOID_DEATHTRAP
+#define SOLENOID_DEATHTRAP
 
 // @section host
 

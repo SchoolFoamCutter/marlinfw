@@ -381,8 +381,7 @@ void GcodeSuite::process_parsed_command(const bool no_ok/*=false*/) {
 
       #if ENABLED(SOLENOID_DEATHTRAP)
         case 13: G13(); break;                                      //uhhh when something is 13 (G13 is called?) call G13 function from somewhere ||| see line 519 of gcode.h
-                                                                  //and https://3dprinting.stackexchange.com/questions/13705/adding-custom-m-or-g-codes-to-marlin-2-0
-        case 14: G14(); break;
+        case 14: G14(); break;                                      //and https://3dprinting.stackexchange.com/questions/13705/adding-custom-m-or-g-codes-to-marlin-2-0
       #endif
 
       #if ENABLED(CNC_WORKSPACE_PLANES)
