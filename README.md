@@ -1,3 +1,15 @@
+# School foam cutter modified firmware
+here's the firmware for the controller board (currently using the mini rambo 1.3a)
+
+this firmware currently allows for
+* no temperature sensors (to avoid killing when no temperature)
+* custom GCode
+   * G13
+   * G14
+
+below is the original marlinFW readme
+** **
+
 <p align="center"><img src="buildroot/share/pixmaps/logo/marlin-outrun-nf-500.png" height="250" alt="MarlinFirmware's logo" /></p>
 
 <h1 align="center">Marlin 3D Printer Firmware</h1>
